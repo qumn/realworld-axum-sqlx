@@ -24,6 +24,7 @@ struct UserBody<T> {
     user: T,
 }
 
+// every function has corresponding struct which be taken a argument
 #[derive(serde::Deserialize)]
 struct NewUser {
     username: String,

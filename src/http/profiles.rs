@@ -30,7 +30,7 @@ pub struct Profile {
     pub username: String,
     pub bio: String,
     pub image: Option<String>,
-    pub following: bool,
+    pub following: bool, // is the auth_user following the username?
 }
 
 // https://realworld-docs.netlify.app/docs/specs/backend-specs/endpoints#get-profile

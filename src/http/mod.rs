@@ -69,7 +69,7 @@ pub async fn serve(config: Config, db: PgPool) -> anyhow::Result<()> {
     // which, I suspect, largely has to do with how it manages its own worker threads instead of
     // letting Tokio do it.
     let app = api_router().layer(
-        ServiceBuilder::new()
+        ServiceBuilder::new() // Note
             // The other reason for using a single object is because `AddExtensionLayer::new()` is
             // rather verbose compared to Actix-web's `Data::new()`.
             //

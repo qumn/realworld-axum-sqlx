@@ -6,10 +6,12 @@
 // to put the application bootstrap logic here is an open question. Both approaches have their
 // upsides and their downsides. Your input is welcome!
 
+// extra lib
 use anyhow::Context;
 use clap::Parser;
 use sqlx::postgres::PgPoolOptions;
 
+// internal lib
 use realworld_axum_sqlx::config::Config;
 use realworld_axum_sqlx::http;
 
